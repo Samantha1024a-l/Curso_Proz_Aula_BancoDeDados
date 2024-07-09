@@ -1,0 +1,56 @@
+Entidade: Cliente
+Cliente
+CPF (atributo simples)
+Nome Completo (atributo composto)
+Primeiro Nome
+Sobrenome
+Endereço (atributo composto)
+Rua
+Número
+Cidade
+Estado
+CEP
+Telefones (atributo multivalorado)
+Telefone 1
+Telefone 2
+Telefone 3 (opcional)
+Email (atributo simples)
+Data de Nascimento (atributo simples)
+Descrição dos Atributos:
+CPF: Identificador único do cliente (atributo simples).
+Nome Completo:
+Primeiro Nome: Primeiro nome do cliente.
+Sobrenome: Sobrenome do cliente.
+Endereço:
+Rua: Nome da rua onde o cliente reside.
+Número: Número da residência do cliente.
+Cidade: Cidade onde o cliente reside.
+Estado: Estado onde o cliente reside.
+CEP: Código postal do endereço do cliente.
+Telefones: Lista de números de telefone do cliente (atributo multivalorado).
+Email: Endereço de email do cliente (atributo simples).
+Data de Nascimento: Data de nascimento do cliente (atributo simples).
+Diagrama Entidade-Relacionamento Simplificado
+scss
+Copiar código
++-------------------------+
+|        Cliente          |
++-------------------------+
+| CPF (simples)           |
+| Nome Completo (composto)|
+|    - Primeiro Nome      |
+|    - Sobrenome          |
+| Endereço (composto)     |
+|    - Rua                |
+|    - Número             |
+|    - Cidade             |
+|    - Estado             |
+|    - CEP                |
+| Telefones (multivalorado)|
+|    - Telefone 1         |
+|    - Telefone 2         |
+|    - Telefone 3         |
+| Email (simples)         |
+| Data de Nascimento      |
+|    (simples)            |
++-------------------------+
