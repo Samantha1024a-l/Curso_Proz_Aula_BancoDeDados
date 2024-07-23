@@ -1,0 +1,76 @@
+De acordo com os conceitos estudados, exiba os resultados das consultas das operações select, project, união, intersecção e diferença. Siga as instruções com base na tabela apresentada em anexo.
+
+- Mostre as informações apenas dos alunos aprovados. A aprovação é acima de 7,0;
+- Exiba as informações dos alunos do primeiro ano com nota maior ou igual a 8,0;
+- Exiba apenas os nomes e as notas dos alunos;
+- Crie uma tabela PROFESSOR que apresente apenas o primeiro e o último nome do professor;
+- Crie uma tabela ALUNO com o primeiro e o último nome de cada;
+- Mostre o resultado da união entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;
+- Exiba o resultado da intersecção entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;
+- Exiba o resultado da diferença entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR. 
+
+
+P.NOME	      U.NOME	     MATRÍCULA	   SÉRIE	       DISCIPLINA               NOTA
+Vitória	     Claudino          5542	   2º ano 	       Matemática	         7,0
+Luiz	     Silva	       6215  	   1º ano	       Português	         8,0
+André	     Carvalho          4521	   3º ano	       Matemática	         9,5
+Alan	     Vilela	       3285	   1º ano	       História	                 8,0
+Figueiredo   Santos            4598	   2º ano	       Geografia	         9,0
+
+1- Mostre as informações apenas dos alunos aprovados. A aprovação é acima de 7,0;
+  select * from aluno where nota > 7.0;
+
+2- Exiba as informações dos alunos do primeiro ano com nota maior ou igual a 8,0;
+  select * from aluno where série = '1º ano' and nota >= 8.0;
+
+3- Exiba apenas os nomes e as notas dos alunos;
+  select P.NOME, U.NOME, NOTA FROM ALUNO;
+
+4- Crie uma tabela PROFESSOR que apresente apenas o primeiro e o último nome do professor;
+  select P.NOME, U.NOME FROM PROFESSOR;
+
+
+          P.NOME	U.NOME
+          Felipe	Andrade
+          Gabriela	Mendes
+          Carlos	Silva
+          Ana	       Oliveira
+
+5- Crie uma tabela ALUNO com o primeiro e o último nome de cada;
+ select P.NOME, U.NOME FROM ALUNO;
+
+
+P.NOME	      U.NOME
+Vitória	     Claudino
+Luiz	      Silva
+André	     Carvalho
+Alan	      Vilela
+Figueiredo    Santos
+
+6- Mostre o resultado da união entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;
+
+select P.NOME, U.NOME FROM ALUNO
+UNION
+select P.NOME, U.NOME FROM PROFESSOR;
+
+7- Exiba o resultado da intersecção entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR;
+
+select P.NOME, U.NOME FROM ALUNO
+INTERSECT
+select P.NOME, U.NOME FROM PROFESSOR;
+
+8- Exiba o resultado da diferença entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR. 
+
+select P.NOME, U.NOME FROM ALUNO
+EXCEPT
+select P.NOME, U.NOME FROM PROFESSOR;
+
+
+
+
+
+
+
+
+
+
