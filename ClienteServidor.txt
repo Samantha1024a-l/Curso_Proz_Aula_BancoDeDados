@@ -1,0 +1,3 @@
+Aqui está uma ilustração que representa a arquitetura cliente-servidor, juntamente com uma explicação de sua funcionalidade:(https://blog.faspec.edu.br/arquitetura-de-sistemas-cliente-servidor/)
+Explicação: Em uma arquitetura cliente-servidor, o cliente e o servidor são entidades distintas que interagem entre si por meio de uma rede. Aqui está uma visão geral básica de como funciona: O cliente é normalmente um dispositivo ou aplicativo voltado para o usuário, como um navegador da web ou aplicativo móvel.
+Ele envia solicitações ao servidor para dados ou serviços. Por exemplo, quando você digita uma URL em seu navegador da web, ele envia uma solicitação ao servidor da web.
