@@ -1,0 +1,15 @@
+Os pilares da segurança de dados que devem ser seguidos para que o novo banco seja bem projetado e funcione corretamente são:
+
+Integridade
+A integridade garante que os dados estejam corretos e não tenham sido alterados de forma não autorizada.
+Implementação: A utilização de hashes e somas de verificação para verificar a integridade dos dados pode ser útil. Além disso, é importante ter mecanismos de auditoria que registrem qualquer modificação nos dados.
+
+Confidencialidade
+A confidencialidade refere-se à proteção das informações contra acesso não autorizado.
+Implementação: Isso pode ser alcançado através de criptografia, controles de acesso rigorosos e autenticação multifatorial. Apenas usuários autorizados devem ter acesso a dados sensíveis, e a implementação de políticas de controle de acesso baseado em funções (RBAC) pode ser eficaz.
+
+Disponibilidade
+A disponibilidade assegura que os dados estejam acessíveis quando necessário.
+Implementação: Isso envolve a implementação de medidas como redundância, backups regulares e soluções de recuperação de desastres. É essencial garantir que haja um plano de continuidade de negócios em caso de falhas no sistema.
+
+
