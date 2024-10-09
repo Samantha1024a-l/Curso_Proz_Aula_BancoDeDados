@@ -1,0 +1,20 @@
+cite pelo menos três métodos que poderiam impactar diretamente a segurança dos dados:
+
+Chave Mestra
+ Representa uma chave exclusiva para cada banco de dados e
+ é utilizada para proteger as chaves privadas de certificados, as assimétricas e as simétricas.
+
+
+Certificado
+
+ É responsável por proteger as chaves simétricas e assimétricas.
+No certificado, é importante ter uma chave mestra com senha,
+ que será usada para proteger os objetos abaixo dela na hierarquia.
+
+
+​Chaves Simétrica e Assimétrica
+
+A chave simétrica é usada para criptografar e descriptografar dados no banco de dados.
+ Quando for produzida, ela deve ser criptografada com um certificado, uma senha e outra chave, sendo ela simétrica ou assimétrica.
+
+ 
